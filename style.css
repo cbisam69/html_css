@@ -1,0 +1,147 @@
+/* Reset margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main background and styling */
+.main {
+    width: 100%;
+    height: 100vh; /* full screen height */
+    background-image: url('1.jpg'); /* background image */
+    background-size: cover; /* cover the entire area */
+    background-position: center; /* center the background image */
+    background-repeat: no-repeat; /* do not repeat the image */
+}
+
+/* Navigation bar */
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: 0 auto; /* center the navbar */
+}
+
+/* Icon section inside the navbar */
+.icon {
+    width: 200px;
+    height: 70px;
+    float: left; /* align to the left */
+}
+
+/* Logo styling */
+.logo {
+    color: #ff7200; /* orange color */
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px; /* space on the left */
+    padding-top: 10px; /* space on the top */
+    margin-top: 5px;
+    float: left; /* align to the left */
+}
+
+/* Menu styling */
+.menu {
+    width: 400px;
+    height: 70px;
+    float: left; /* align to the left */
+}
+
+/* Menu list */
+ul {
+    display: flex;
+    align-items: center; /* vertically align items */
+    justify-content: center; /* horizontally center items */
+}
+
+/* List items in menu */
+ul li {
+    list-style-type: none; /* no bullet points */
+    margin-left: 62px; /* space between menu items */
+    font-size: 14px;
+}
+
+/* Links in menu items */
+ul li a {
+    color: white;
+    text-decoration: none; /* no underline */
+    font-weight: bold;
+    transition: color 0.4s ease-in-out; /* smooth color transition */
+}
+
+/* Hover effect for links */
+ul li a:hover {
+    color: #ff7200; /* change color on hover */
+}
+
+/* Search bar section */
+.search {
+    width: 330px;
+    float: left; /* align to the left */
+    margin-left: 270px; /* space from the previous element */
+}
+
+/* Input field in search bar */
+.srch {
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200; /* orange border */
+    color: white;
+    padding: 10px; /* padding inside the input */
+    border-top-left-radius: 5px; /* rounded corner on the top left */
+    border-bottom-left-radius: 5px; /* rounded corner on the bottom left */
+}
+
+/* Search button */
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #ff7200; /* orange background */
+    border: none;
+    color: white;
+    border-top-right-radius: 5px; /* rounded corner on the top right */
+    border-bottom-right-radius: 5px; /* rounded corner on the bottom right */
+    cursor: pointer; /* pointer cursor on hover */
+    transition: color 0.2s ease; /* color transition for hover effect */
+}
+
+/* Hover effect for button */
+.btn:hover {
+    color: black; /* text color changes to black on hover */
+}
+
+/* Focus styling to remove default outline for input and button */
+.srch:focus, .btn:focus {
+    outline: none;
+}
+
+/* Content section styling */
+.content {
+    width: 1200px;
+    margin: auto; /* centering */
+    color: white; /* text color */
+    position: relative; /* for absolute positioning of children */
+}
+
+/* Paragraphs inside content */
+.content .par {
+    padding: 20px; /* padding all around */
+    font-family: Arial;
+    letter-spacing: 1.2px; /* space between letters */
+    line-height: 30px; /* space between lines */
+}
+
+/* Heading inside content */
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+/* Span for emphasizing parts of text */
+.content span {
+    color: #ff7200; /* orange color */
+    font-size: 65px;
+}
